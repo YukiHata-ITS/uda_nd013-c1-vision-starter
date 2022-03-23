@@ -1,0 +1,4 @@
+C:Users4071015DocumentsGitHubuda_nd013-c1-vision-starterworkspaceexperimentsreferenceexportedcheckpointckpt-0.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
+C:Users4071015DocumentsGitHubuda_nd013-c1-vision-starterworkspaceexperimentsreferenceexportedsaved_modelvariablesvariables.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
+C:/Users/4071015/Documents/GitHub/uda_nd013-c1-vision-starter/workspace/experiments/reference/exported/saved_model/variables/variables.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
+C:/Users/4071015/Documents/GitHub/uda_nd013-c1-vision-starter/workspace/experiments/reference/exported/checkpoint/ckpt-0.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text

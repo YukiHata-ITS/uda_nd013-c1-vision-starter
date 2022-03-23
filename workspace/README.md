@@ -1,5 +1,7 @@
 # Object Detection in an Urban Environment
 
+## [My report link](Submission_report.md)
+
 ## Data
 
 For this project, we will be using data from the [Waymo Open dataset](https://waymo.com/open/).
@@ -136,6 +138,8 @@ This should create a new folder `experiments/reference/exported/saved_model`. Yo
 Finally, you can create a video of your model's inferences for any tf record file. To do so, run the following command (modify it to your files):
 ```
 python inference_video.py --labelmap_path label_map.pbtxt --model_path experiments/reference/exported/saved_model --tf_record_path /data/waymo/testing/segment-12200383401366682847_2552_140_2572_140_with_camera_labels.tfrecord --config_path experiments/reference/pipeline_new.config --output_path animation.gif
+
+## [My report link](Submission_report.md)
 ```
 
 ## Submission Template
