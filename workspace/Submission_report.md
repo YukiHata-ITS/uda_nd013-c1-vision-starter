@@ -332,3 +332,48 @@ Loss/total_loss: 1026282356736.000000
 ```
 The performance has not be inproved.
 
+
+#### experiment6
+- folder: [experiment6](experiments\experiment6)  
+- base model: ssd_resnet101_v1_fpn_640x640_coco17_tpu-8  
+- pipeline: [pipeline_new.config](experiments\experiment6\pipeline_new.config)  
+
+Result
+![r_Loss](00_report_data\experiment6\Loss.PNG)
+![r_Precision](00_report_data\experiment6\DetectionBoxes_Precision.PNG)
+![r_Recall](00_report_data\experiment6\DetectionBoxes_Recall.PNG)
+
+This training output is too large.  
+I have reached the storage limit of 3GB.  
+
+Eval metrics at step 2000
+```
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.001
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.007
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.010
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.097
+DetectionBoxes_Precision/mAP: 0.000072
+DetectionBoxes_Precision/mAP@.50IOU: 0.000313
+DetectionBoxes_Precision/mAP@.75IOU: 0.000004
+DetectionBoxes_Precision/mAP (small): 0.000000
+DetectionBoxes_Precision/mAP (medium): 0.000118
+DetectionBoxes_Precision/mAP (large): 0.000873
+DetectionBoxes_Recall/AR@1: 0.000027
+DetectionBoxes_Recall/AR@10: 0.000439
+DetectionBoxes_Recall/AR@100: 0.007338
+DetectionBoxes_Recall/AR@100 (small): 0.000000
+DetectionBoxes_Recall/AR@100 (medium): 0.010285
+DetectionBoxes_Recall/AR@100 (large): 0.096618
+Loss/localization_loss: 0.877682
+Loss/classification_loss: 0.761382
+Loss/regularization_loss: 40.775387
+Loss/total_loss: 42.414440
+```
