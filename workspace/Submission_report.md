@@ -84,16 +84,20 @@ Create video
 python inference_video.py --labelmap_path label_map.pbtxt --model_path experiments/reference/exported/saved_model --tf_record_path /data/waymo/segment-12200383401366682847_2552_140_2572_140_with_camera_labels.tfrecord --config_path experiments/reference/pipeline_new.config --output_path animation.gif
 ```
 
-ここまで記入完了
-
 ### Dataset
 #### Dataset analysis
-This section should contain a quantitative and qualitative description of the dataset. It should include images, charts and other visualizations.
+
+Dataset analysis is written in the following file.  
+[Exploratory Data Analysis.ipynb](/workspace/Exploratory%20Data%20Analysis.ipynb)
+
 #### Cross validation
-This section should detail the cross validation strategy and justify your approach.
 
 ### Training
 #### Reference experiment
+Each model is in this folder "[experiments](experiments)\\*\exported".    
+
+Each gif animation is the file "[00_report_data](00_report_data)\\*\animation.7z".  
+
 
 #### reference
 - folder: [reference](experiments\reference)  
@@ -377,3 +381,4 @@ Loss/classification_loss: 0.761382
 Loss/regularization_loss: 40.775387
 Loss/total_loss: 42.414440
 ```
+
