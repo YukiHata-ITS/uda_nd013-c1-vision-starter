@@ -130,7 +130,7 @@ Result
 
 The Loss graphs are gradually decreasing as learning progresses.  
 In the case that the model have learned well, the loss of validation is expected to be lower than the loss of training.
-And, the precision and recall are expected be large value than shown in this above graph and the below metrics.
+And, the precision and recall are expected be large value than shown in this above graph and the below metrics.  
 
 
 Eval metrics at step 2500
@@ -184,6 +184,10 @@ Result
 ![r_Loss](00_report_data\experiment0\Loss.PNG)
 ![r_Precision](00_report_data\experiment0\DetectionBoxes_Precision.PNG)
 ![r_Recall](00_report_data\experiment0\DetectionBoxes_Recall.PNG)
+
+In this learning, the loss has hardly decreased and has converged to a very high value.
+Therefore learning is not good. And it seems that overfitting has happend.
+
 
 Eval metrics at step 2500
 ```
@@ -275,6 +279,8 @@ Result
 ![r_Loss](00_report_data\experiment4\Loss.PNG)
 ![r_Precision](00_report_data\experiment4\DetectionBoxes_Precision.PNG)
 ![r_Recall](00_report_data\experiment4\DetectionBoxes_Recall.PNG)
+
+It seemes that overfitting has happend.
 
 Eval metrics at step 2500
 ```
