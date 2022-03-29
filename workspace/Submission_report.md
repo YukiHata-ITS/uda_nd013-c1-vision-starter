@@ -91,6 +91,25 @@ Dataset analysis is written in the following file.
 [Exploratory Data Analysis.ipynb](/workspace/Exploratory%20Data%20Analysis.ipynb)
 
 #### Cross validation
+The tf records files are splited between these three folders with [`create_splits.py`](create_splits.py).  
+from  
+`/home/workspace/data/waymo/training_and_validation/`  
+to  
+`/home/workspace/data/train/`,  
+`/home/workspace/data/val/`, and  
+`/home/workspace/data/test/`
+
+The detail is in Precedure 2-1.
+
+The split ratio is the following.  
+| folder name | usage | ratio |
+| ---- | ---- | ---- |
+| train | training | 70% |
+| eval  | validation | 20% |
+| test  | test | 10% |
+
+The purpose of cross validation is model generalization and alleviatation the overfitting challenges.  
+The test data is different from training and validation data.
 
 ### Training
 #### Reference experiment
@@ -108,6 +127,11 @@ Result
 ![r_Loss](00_report_data\reference\Loss.PNG)
 ![r_Precision](00_report_data\reference\DetectionBoxes_Precision.PNG)
 ![r_Recall](00_report_data\reference\DetectionBoxes_Recall.PNG)
+
+The Loss graphs are gradually decreasing as learning progresses.  
+In the case that the model have learned well, the loss of validation is expected to be lower than the loss of training.
+And, the precision and recall are expected be large value than shown in this above graph and the below metrics.
+
 
 Eval metrics at step 2500
 ```
